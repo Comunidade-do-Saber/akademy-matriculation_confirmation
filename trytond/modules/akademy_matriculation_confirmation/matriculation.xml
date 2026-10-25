@@ -13,7 +13,7 @@ this repository contains the full copyright notices and license terms. -->
 
         <!-- start change matriculation -->
         <record model="ir.action.wizard" id="act_changematriculation_wizard">
-            <field name="name">Mudança de matrícula</field>
+            <field name="name">Change of registration</field>
             <field name="wiz_name">akademy_matriculation_confirmation.wizchangematriculation.create</field>
         </record>
         <record model="ir.ui.view" id="act_changematriculation_wizard_from">
@@ -21,7 +21,7 @@ this repository contains the full copyright notices and license terms. -->
             <field name="type">form</field>
             <field name="name">changematriculation_wizcreate_form</field>            
         </record>
-        <menuitem action="act_changematriculation_wizard" parent="akademy_matriculation.akademy_registrations" id="akademy_changematriculation" 
-            sequence="40"/>
+        <menuitem action="act_changematriculation_wizard" parent="akademy_matriculation.akademy_registrations" 
+            id="akademy_changematriculation" sequence="40"/>
 	</data>
 </tryton>

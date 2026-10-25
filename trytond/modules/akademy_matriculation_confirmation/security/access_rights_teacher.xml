@@ -2,34 +2,23 @@
 <!-- This file is part of SAGE Education.   The COPYRIGHT file at the top level of
 this repository contains the full copyright notices and license terms. -->
 
-<!-- GROUP OF PERMISSIONS FOR TEACHER USERS -->
+<!-- Group of Permissions for Teacher users -->
 <tryton>
-    <data>        
-        <!-- Access to the REGISTRATION menu 
-        <record model="ir.ui.menu-res.group" 
-            id="menu_changematriculation-group_akademy_teacher">
-            <field name="menu" ref="akademy_changematriculation"/>
-            <field name="group" ref="akademy_party.group_akademy_teacher"/>
-        </record>
-        -->
-
-        <!-- Defining Rules for Enrollment Access Models -->
-        <!-- start Wiz Change Matriculation Start -->
+    <data>
         <record model="ir.model.access" 
             id="access_akademy_matriculation_confirmation_changematriculation_wizard-group_akademy_teacher">
-            <field name="model" search="[('model', '=', 'akademy_matriculation_confirmation.wizchangematriculation.create.start')]"/>
+            <field name="model">akademy_matriculation_confirmation.wizchangematriculation.create.start</field>
             <field name="group" ref="akademy_party.group_akademy_teacher"/>
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="False"/>
             <field name="perm_create" eval="False"/>
             <field name="perm_delete" eval="False"/>
         </record>
-        <!-- access rule group -->
+        
         <record model="ir.rule.group" 
             id="rule_group_akademy_matriculation_confirmation_changematriculation_wizard-group_akademy_teacher">
-            <field name="name">Mudança de Matricula Wiz</field>
-            <field name="model" 
-                search="[('model', '=', 'akademy_matriculation_confirmation.wizchangematriculation.create.start')]"/>
+            <field name="name">Change of registration wiz</field>
+            <field name="model">akademy_matriculation_confirmation.wizchangematriculation.create.start</field>
             <field name="global_p" eval="False"/>
             <field name="default_p" eval="False"/>
             <field name="perm_read" eval="True"/>

@@ -1,7 +1,7 @@
 # 🏫 SAGE Education - Institutional Management / ERP
 
 **Module:** Akademy Matriculation Confirmation   
-**Version:** 7.0.x        
+**Version:** 8.0.x        
 
 
 ---
@@ -20,7 +20,7 @@ We hope you find **SAGE Education** motivating and inspiring, and we look forwar
 
 
 We host a public demo server where you can try out SAGE Education with different access profiles:
-[sage.comunidadedosaber.ao](https://sage.comunidadedosaber.ao)
+[app.sage-edu.comunidadedosaber.ao](https://app.sage-edu.comunidadedosaber.ao)
 
 
 | **Profile** | **User**     | 
@@ -74,8 +74,8 @@ It is intended for **schools, training centers, universities, and educational au
 ### 🌐 Homepage
   
 **Website:** [sage-edu.comunidadedosaber.ao](https://sage-edu.comunidadedosaber.ao)  
-**App:** [sage.comunidadedosaber.ao](https://sage.comunidadedosaber.ao)  
-**Docs:** [docs.comunidadedosaber.ao](https://docs.comunidadedosaber.ao)  
+**App:** [app.sage-edu.comunidadedosaber.ao](https://app.sage-edu.comunidadedosaber.ao)  
+**Docs:** [docs.sage-edu.comunidadedosaber.ao](https://docs.sage-edu.comunidadedosaber.ao)  
 **Team:** [comunidadedosaber.ao](https://comunidadedosaber.ao)  
 **PyPi:** [SAGE Edu](https://pypi.org/user/comunidade_do_saber)
 

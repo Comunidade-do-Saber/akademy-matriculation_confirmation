@@ -2,33 +2,29 @@
 <!-- This file is part of SAGE Education.   The COPYRIGHT file at the top level of
 this repository contains the full copyright notices and license terms. -->
 
-<!-- PERMISSION GROUP FOR ADMINISTRATOR USERS -->
+<!-- Group of Permissions for Administrator users -->
 <tryton>
-    <data>        
-        <!-- Access to the REGISTRATION menu -->
+    <data> 
         <record model="ir.ui.menu-res.group" 
             id="menu_changematriculation-group_akademy_admin">
             <field name="menu" ref="akademy_changematriculation"/>
             <field name="group" ref="akademy_party.group_akademy_admin"/>
         </record>
 
-        <!-- Defining Rules for Enrollment Access Models -->
-        <!-- start Wiz Change Matriculation Start -->
         <record model="ir.model.access" 
             id="access_akademy_matriculation_confirmation_changematriculation_wizard-group_akademy_admin">
-            <field name="model" search="[('model', '=', 'akademy_matriculation_confirmation.wizchangematriculation.create.start')]"/>
+            <field name="model">akademy_matriculation_confirmation.wizchangematriculation.create.start</field>
             <field name="group" ref="akademy_party.group_akademy_admin"/>
             <field name="perm_read" eval="True"/>
             <field name="perm_write" eval="True"/>
             <field name="perm_create" eval="True"/>
             <field name="perm_delete" eval="True"/>
         </record>
-        <!-- access rule group -->
+        
         <record model="ir.rule.group" 
             id="rule_group_akademy_matriculation_confirmation_changematriculation_wizard-group_akademy_admin">
-            <field name="name">Mudança de Matricula Wiz</field>
-            <field name="model" 
-                search="[('model', '=', 'akademy_matriculation_confirmation.wizchangematriculation.create.start')]"/>
+            <field name="name">Change of registration wiz</field>
+            <field name="model">akademy_matriculation_confirmation.wizchangematriculation.create.start</field>
             <field name="global_p" eval="False"/>
             <field name="default_p" eval="False"/>
             <field name="perm_read" eval="True"/>

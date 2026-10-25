@@ -4,6 +4,3 @@
 dist/
 build/
 *.egg-info/
-
-# Setup Tryton Module
-trytond/modules/akademy_matriculation_confirmation/setup.py
